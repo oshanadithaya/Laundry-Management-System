@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee;http://java.sun.com/xml/ns/j2ee/web-app_2_5.xsd">
+         version="2.5">
+           
+    <servlet>
+    	<servlet-name>regularServlet</servlet-name>
+    	<servlet-class>packages.RegularServlet</servlet-class>
+    </servlet> 
+    <servlet-mapping>
+    	<servlet-name>regularServlet</servlet-name>
+    	<url-pattern>/user</url-pattern>
+    </servlet-mapping>    
+    
+    <servlet>
+    	<servlet-name>regularServletUp</servlet-name>
+    	<servlet-class>packages.RegUpServlet</servlet-class>
+    </servlet> 
+    <servlet-mapping>
+    	<servlet-name>regularServletUp</servlet-name>
+    	<url-pattern>/abs</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+     	<servlet-name>updateRegUser</servlet-name>
+     	<servlet-class>packages.UpdateRegUserServlet</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>updateRegUser</servlet-name>
+     	<url-pattern>/update</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+     	<servlet-name>deleteRegUser</servlet-name>
+     	<servlet-class>packages.DeleteRegUserServlet</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>deleteRegUser</servlet-name>
+     	<url-pattern>/delete</url-pattern>
+     </servlet-mapping>
+    
+    
+</web-app>
